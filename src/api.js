@@ -74,7 +74,7 @@ function getAccessToken() {
     const code = searchParams.get('code');
 
     if (!code) {
-      window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=p7ek3hd2gcir2hpcvsih91or6d&response_type=code&redirect_uri=https://chrisxkoch.github.io/meetup/';
+      window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=kjrtsjp9sat50ld3gp43kdm367&response_type=code&redirect_uri=https://chrisxkoch.github.io/meetup/';
       return null;
     }
 
@@ -96,11 +96,11 @@ async function getOrRenewAccessToken(type, key) {
   let url;
   if (type === 'get') {
     // Lambda endpoint to get token by code
-    url = 'https://977jsu04r2.execute-api.eu-central-1.amazonaws.com/dev/api/token/'
+    url = 'https://vpdnlv2feh.execute-api.eu-central-1.amazonaws.com/dev/api/token/'
       + key;
   } else if (type === 'renew') {
     // Lambda endpoint to get token by refresh_token
-    url = 'https://977jsu04r2.execute-api.eu-central-1.amazonaws.com/dev/api/refreshtoken/'
+    url = 'https://vpdnlv2feh.execute-api.eu-central-1.amazonaws.com/dev/api/refreshtoken/'
       + key;
   }
 
