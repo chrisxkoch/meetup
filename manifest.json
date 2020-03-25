@@ -1,6 +1,6 @@
 {
-  "short_name": "Meetup App",
-  "name": "Meetup Application",
+  "short_name": "MeetUp App",
+  "name": "MeetUp App - Find upcoming events in your city",
   "icons": [
     {
       "src": "icon.png",
